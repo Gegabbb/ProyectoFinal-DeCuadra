@@ -1,4 +1,4 @@
-//Funcion que crea la tabla de productos en el carrito
+//Funcián que crea la tabla de productos en el carrito.
 function createTable(colletion = []) {
   let bodyTable = document.getElementById("tableBody");
   bodyTable.innerHTML = "";
@@ -15,14 +15,14 @@ function createTable(colletion = []) {
   });
 }
 
-//Fucion que guarda el carrito y el total en el localStore
+//Fución que guarda el carrito y el total en el localStore.
 
 function saveCartAndTotalsToLocalStore(cart, totalQuantity, totalPrice) {
   localStorage.setItem("cart", JSON.stringify(cart));
   localStorage.setItem("totalQuantity", parseInt(totalQuantity));
   localStorage.setItem("totalPrice", parseFloat(totalPrice));
 }
-//funcion que obtiene los totales del localStore
+//Función que obtiene los totales del localStore.
 function getTotalsToLocalStore() {
   totalQuantityJson = parseInt(localStorage.getItem("totalQuantity"));
   totalPriceJson = parseFloat(localStorage.getItem("totalPrice"));
@@ -31,12 +31,12 @@ function getTotalsToLocalStore() {
     totalPrice: totalPriceJson,
   };
 }
-//Funcion que obtiene el carrito del localStore
+//Función que obtiene el carrito del localStore.
 function getCartToLocalStore() {
   const cart = localStorage.getItem("cart");
   return cart ? JSON.parse(cart) : [];
 }
-//funcion que crea la tabla de totales de Cantidad y precio
+//Función que crea la tabla de totales de Cantidad y precio.
 function createTableQuantityPrice(totalQuantity, totalPrice) {
   let bodyTable = document.getElementById("tableBodyQuantityPrice");
   bodyTable.innerHTML = "";
@@ -48,6 +48,7 @@ function createTableQuantityPrice(totalQuantity, totalPrice) {
       `;
   bodyTable.append(record);
 }
+//Función que carga el carrito
 function loadCart() {
   return new Promise((resolve) => {
     const cart = getCartToLocalStore();
@@ -59,15 +60,15 @@ function loadCart() {
     }
   });
 }
-
+//Carga el carrito, crea la tabla con los productos.
 loadCart()
   .then((cart) => {
     createTable(cart);
     let buttons = document.querySelectorAll(".btn-Comprar");
-    //define a las variable para poder ser utizadas
+    //Define a las variable para poder ser utizadas.
     let totalQuantityJson = NaN;
     let totalPriceJson = NaN;
-    //Toma los valores guardados en el localStore y verifica que son numeros
+    //Toma los valores guardados en el localStore y verifica que son números.
     const totalFromLocalStore = getTotalsToLocalStore();
     if (
       !isNaN(totalFromLocalStore.totalQuantity) &&
@@ -76,7 +77,7 @@ loadCart()
       totalQuantityJson = totalFromLocalStore.totalQuantity;
       totalPriceJson = totalFromLocalStore.totalPrice;
     }
-    //se inicializa obteninedo el valor de los Json o 0(cero) caso contrario no suma
+    //Se inicializa obteninedo el valor de los Json o 0(cero) caso contrario no suma
     let totalQuantity = totalQuantityJson || 0;
     let totalPrice = totalPriceJson || 0;
 

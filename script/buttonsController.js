@@ -1,32 +1,7 @@
-//Obtiene los elementos del DOM
-const checkPayButton = document.getElementById("payButton");
+//Obtiene los elementos del DOM.
 const totalQuantityButton = document.getElementById("totalQuantity");
 
-//Habilita el botton de pagar, al haber un producto selecionado
-function enablePayButton() {
-  if (parseInt(totalQuantityButton.textContent) > 0) {
-    checkPayButton.disabled = false;
-  }
-}
-
-//Llama a la funcion para habilitar el boton de pagar
-enablePayButton();
-
-//Obteiene el evento y define la direccion del boton
-checkPayButton.addEventListener("click", () => {
-  //Redireciona a la pagina ticket, si hay un producto seleccionado
-  if (parseInt(totalQuantityButton.textContent) > 0) {
-    const pageTitle = document.title;
-    if (pageTitle === "Comida || Fast And Food") {
-      window.location.href = "./pages/ticket.html";
-    } else if (pageTitle === "Bebidas || Fast And Food" || pageTitle === "Postres || Fast And Food") {
-      window.location.href = "./ticket.html";
-    }
-    
-  }
-});
-
-//Funcion que vacia el carrito
+//Función que vacia el carrito..
 function emptyCart() {
   return new Promise((resolve) => {
     saveCartAndTotalsToLocalStore([], 0, 0);
@@ -34,7 +9,7 @@ function emptyCart() {
   });
 }
 
-//Capturamos el evento click
+//Capturamos el evento click.
 const vaciarButton = document.getElementById("vaciar-carrito");
 vaciarButton.addEventListener("click", () => {
   emptyCart()
@@ -69,7 +44,7 @@ vaciarButton.addEventListener("click", () => {
     });
 });
 
-//Actualiza la pagina para activar el boton del carrito
+//Actualiza la página para activar el boton del carrito.
 const btnReload = document.getElementById("btnReload");
 btnReload.addEventListener("click", () => {
   location.reload();
