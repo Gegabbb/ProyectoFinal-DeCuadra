@@ -16,7 +16,7 @@ enablePayButton();
 checkPayButton.addEventListener("click", () => {
   //Redireciona a la pagina ticket, si hay un producto seleccionado 
   if (parseInt(totalQuantityButton.textContent) > 0) {
-    window.location.href = "/pages/ticket.html";
+    window.location.assign ("/pages/ticket.html");
   }
 });
 
