@@ -14,9 +14,15 @@ enablePayButton();
 
 //Obteiene el evento y define la direccion del boton
 checkPayButton.addEventListener("click", () => {
-  //Redireciona a la pagina ticket, si hay un producto seleccionado 
+  //Redireciona a la pagina ticket, si hay un producto seleccionado
   if (parseInt(totalQuantityButton.textContent) > 0) {
-    window.location.assign ("/pages/ticket.html");
+    const pageTitle = document.title;
+    if (pageTitle === "Comida || Fast And Food") {
+      window.location.href = "./pages/ticket.html";
+    } else if (pageTitle === "Bebidas || Fast And Food" || pageTitle === "Postres || Fast And Food") {
+      window.location.href = "./ticket.html";
+    }
+    
   }
 });
 
