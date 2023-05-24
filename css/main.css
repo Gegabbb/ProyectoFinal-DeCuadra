@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  margin: 40px 0;
+}
+hr {
+  height: 25px;
+  background-color: red;
+  transform: skewX(35deg);
+  margin: 50px 0;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  overflow-y: scroll;
+  max-height: 100px;
+}
+.scrollTable {
+  overflow-y: scroll;
+  position: relative;
+  max-height: 700px;
+  width: auto;
+}
+
+.scrollTable  th {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+}
+.scrollTable #tableBodyQuantityPrice{
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.card, .pay-container{
+  width: 18rem;
+}
+
+#btnReload {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  
+}
