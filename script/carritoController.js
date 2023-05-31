@@ -1,6 +1,7 @@
- //Funcián que crea la tabla de productos en el carrito.
-
- function createTable(colletion = []) {
+/*Tuve que sacar estas funciones de adentro del bloque del fetch porque descubri que no me andaba el boton
+ de vaciado, estuve buscando la solucion por horas y era eso :)*/
+//Funcián que crea la tabla de productos en el carrito.
+function createTable(colletion = []) {
   let bodyTable = document.getElementById("tableBody");
   bodyTable.innerHTML = "";
 
@@ -16,7 +17,6 @@
   });
 }
 //Fución que guarda el carrito y el total en el localStore.
-
 function saveCartAndTotalsToLocalStore(cart, totalQuantity, totalPrice) {
   localStorage.setItem("cart", JSON.stringify(cart));
   localStorage.setItem("totalQuantity", parseInt(totalQuantity));
@@ -67,7 +67,6 @@ fetch("../json/products.json")
 
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
-        console.log(products.length);
         const article = document.createElement("article");
         article.innerHTML = `
       <article class="col">
@@ -87,20 +86,19 @@ fetch("../json/products.json")
     }
     const pageTitle = document.title;
     if (pageTitle === "Comida || Fast And Food") {
-      const imgPageComida = [1,2,3,4];
-      createCard("comida",imgPageComida);
+      const imgPageComida = [1, 2, 3, 4];
+      createCard("comida", imgPageComida);
       products = data["comida"];
     } else if (pageTitle === "Bebidas || Fast And Food") {
-      const imgPageBebida = [5,6,7,8];
-      createCard("bebida",imgPageBebida);
+      const imgPageBebida = [5, 6, 7, 8];
+      createCard("bebida", imgPageBebida);
       products = data["bebida"];
     } else if (pageTitle === "Postres || Fast And Food") {
-      const imgPagePostre = [9,10,11,12,13,14];
-      createCard("postres",imgPagePostre);
+      const imgPagePostre = [9, 10, 11, 12, 13, 14];
+      createCard("postres", imgPagePostre);
       products = data["postres"];
     }
 
-    
     //Función que carga el carrito
     function loadCart() {
       return new Promise((resolve) => {
@@ -182,5 +180,3 @@ fetch("../json/products.json")
   .catch((error) => {
     console.error(error);
   });
- 
-  
