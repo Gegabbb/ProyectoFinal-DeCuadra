@@ -1,5 +1,4 @@
-//Obtiene los elementos del DOM.
-const totalQuantityButton = document.getElementById("totalQuantity");
+
 
 //Función que vacia el carrito..
 function emptyCart() {
@@ -21,7 +20,7 @@ vaciarButton.addEventListener("click", () => {
         confirmButtonText: "Si",
         denyButtonText: `No`,
       }).then((result) => {
-        /* Si preciona confirmar se elimina el carrito, si preciona no, no lo vacia*/
+        //Si preciona confirmar se elimina el carrito, si preciona no, no lo vacia
         if (result.isConfirmed) {
           Swal.fire("Vaciando...", " ", "success");
           cart = [];

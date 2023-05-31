@@ -5,10 +5,10 @@ const nameLastname = document.getElementById("name-lastName");
 const dni = document.getElementById("dni");
 const regex = /^[a-zA-Z\s-]+$/; //Usamos expreciones regulares para vericar que se ingresaron letras.
 
-//Capturamos el evento del boton e imprimimos un mensaje
+//Capturamos el evento del botón e imprimimos un mensaje.
 btnPay.addEventListener("click", () =>{
     if (cardNumber.value.length === 16 &&cvvNumber.value.length === 3 &&regex.test(nameLastname.value) && dni.value.length === 8 ) {
-      //si el pago es correcto imprimimos un alert con sweet alert
+      //si el pago es correcto imprimimos un alert con sweet alert.
         Swal.fire({
             title: 'Pago procesado correctamente',
             icon: 'success',
@@ -20,7 +20,7 @@ btnPay.addEventListener("click", () =>{
             }
           })
     } else {
-      //Si hay algo erroneo el imprimimos un alert de error
+      //Si hay algo erroneo el imprimimos un alert de error.
         Swal.fire({
         icon: 'error',
         title: 'Oops...',

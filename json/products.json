@@ -1,0 +1,107 @@
+{
+    "comida": [
+         {
+            "id": "product_1",
+            "name": "Guiso",
+            "price": 2302.54,
+            "quantity": 1,
+            "description": "El guiso es un plato caliente de origen latinoamericano, que se prepara con carne, vegetales y una variedad deespecias. Es popular en muchos países de América Latina",
+            "url": "../img/guiso.jpg"
+        },
+         {
+            "id": "product_2",
+            "name": "Asado",
+            "price": 6150.15,
+            "quantity": 1,
+            "description": "El asado es un plato tradicional de carne asada a la parrilla. Se prepara con diferentes cortes de carne, como vaca, cerdo, cordero o pollo, y se suele acompañar con chimichurri, ensaladas y otras guarniciones"
+        },
+        {
+            "id": "product_3",
+            "name": "Ensalada",
+            "price": 1200,
+            "quantity": 1,
+            "description": "La ensalada es un plato frío que generalmente incluye una variedad de verduras crujientes, como lechuga, tomates, pepinos y zanahorias, y se adereza con una vinagreta o salsa."
+        },
+        {
+            "id": "product_4",
+            "name": "Sopa",
+            "price": 2030.12,
+            "quantity": 1,
+            "description": "La sopa es un plato líquido y caliente que generalmente se sirve como una entrada antes del plato principal. Está compuesta por caldo, vegetales, carnes, pescado o mariscos, y diferentes tipos de fideos o granos. Es un plato que puede variar mucho dependiendo de los ingredientes utilizados."
+        }
+    ],
+    "bebida" : [
+        {
+            "id": "product_5",
+            "name": "CocaCola",
+            "price": 350.25,
+            "quantity": 1,
+            "description": "Este es un producto de CocaCola, una de las marcas más reconocidas en el mundo de las bebidas. Se trata de una bebida refrescante, con un sabor único e inconfundible que ha sido disfrutado por millones de personas en todo el mundo. se trata de una bebida carbonatada, elaborada a partir de ingredientes de alta calidad. Su sabor dulce y refrescante la hace ideal para consumir en cualquier momento del día, ya sea en solitario o acompañada de una deliciosa comida."
+        },
+        {
+            "id": "product_6",
+            "name": "Sprite",
+            "price": 350,
+            "quantity": 1,
+            "description": "Sprite es una bebida refrescante carbonatada, de sabor cítrico y sin cafeína. Fue lanzada al mercado en 1961 por The Coca-Cola Company y desde entonces se ha convertido en una de las bebidas más populares a nivel mundial. La receta original de Sprite contenía lima-limón, aunque hoy en día se comercializan otras variantes con diferentes sabores."
+        },
+        {
+            "id": "product_7",
+            "name": "Pepsi",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_8",
+            "name": "Fanta",
+            "price": 412.50,
+            "quantity": 1,
+            "description": "La refrescante bebida Fanta es una marca reconocida a nivel mundial. Esta bebida gaseosa, producida por la compañía The Coca-Cola Company, se caracteriza por su sabor afrutado y su burbujeante textura. Con su amplia variedad de sabores, Fanta ofrece opciones para todos los gustos, desde naranja hasta piña, fresa, limón y uva, entre otros."
+        }
+    ],
+    "postres": [
+        {
+            "id": "product_9",
+            "name": "Helado",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_10",
+            "name": "Flan",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_11",
+            "name": "Gelatina",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_12",
+            "name": "Ensalada de fruta",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_13",
+            "name": "Arroz con leche",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        },
+        {
+            "id": "product_14",
+            "name": "Torta de chocolate",
+            "price": 350.10,
+            "quantity": 1,
+            "description": "La refrescante bebida gaseosa Pepsi es la elección perfecta para aquellos que buscan un sabor único y una experiencia de bebida refrescante. Con una mezcla de cola y un toque de limón, Pepsi ofrece una combinación única que estimula tus sentidos."
+        }
+    ]
+}

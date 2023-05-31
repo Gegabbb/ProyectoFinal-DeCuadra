@@ -15,7 +15,11 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
@@ -68,130 +72,39 @@
             <h2 class="text-center mb-3">Comidas</h2>
             <hr />
             <div
-              class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-gap-3"
+              id="cardBodyCreated" class=" row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-gap-3"
             >
-              <article class="col">
-                <div
-                  class="card mx-auto h-100 product-item"
-                  id="product_1"
-                  style="width: 18rem"
-                >
-                  <img
-                    src="./img/guiso.jpg"
-                    class="card-img-top h-100"
-                    alt="Plato de guiso"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Guiso</h5>
-                    <p class="card-text">
-                      El guiso es un plato caliente de origen latinoamericano,
-                      que se prepara con carne, vegetales y una variedad de
-                      especias. Es popular en muchos países de América Latina
-                    </p>
-                    <p>Precio: $2302.54</p>
-                    <button class="btn btn-primary btn-Comprar">Comprar</button>
-                  </div>
-                </div>
-              </article>
-              <article class="col">
-                <div
-                  class="card mx-auto h-100 product-item"
-                  id="product_2"
-                  style="width: 18rem"
-                >
-                  <img
-                    src="./img/Asado.jpg"
-                    class="card-img-top h-100"
-                    alt="Carne asada"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Asado</h5>
-                    <p class="card-text">
-                      El asado es un plato tradicional de carne asada a la
-                      parrilla. Se prepara con diferentes cortes de carne, como
-                      vaca, cerdo, cordero o pollo, y se suele acompañar con
-                      chimichurri, ensaladas y otras guarniciones.
-                    </p>
-                    <p>Precio: $6150.15</p>
-                    <button class="btn btn-primary btn-Comprar">Comprar</button>
-                  </div>
-                </div>
-              </article>
-              <article class="col">
-                <div
-                  class="card mx-auto h-100 product-item"
-                  id="product_3"
-                  style="width: 18rem"
-                >
-                  <img
-                    src="./img/ensalada.jpg"
-                    class="card-img-top h-100"
-                    alt="Plato de ensalada"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Ensalada</h5>
-                    <p class="card-text">
-                      La ensalada es un plato frío que generalmente incluye una
-                      variedad de verduras crujientes, como lechuga, tomates,
-                      pepinos y zanahorias, y se adereza con una vinagreta o
-                      salsa.
-                    </p>
-                    <p>Precio: $1200</p>
-                    <button class="btn btn-primary btn-Comprar">Comprar</button>
-                  </div>
-                </div>
-              </article>
-              <article class="col">
-                <div
-                  class="card mx-auto h-100 product-item"
-                  id="product_4"
-                  style="width: 18rem"
-                >
-                  <img
-                    src="./img/sopa-de-fideos.jpg"
-                    class="card-img-top img-fluid h-100"
-                    alt="plato de sopa"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Sopa</h5>
-                    <p class="card-text">
-                      La sopa es un plato líquido y caliente que generalmente se
-                      sirve como una entrada antes del plato principal. Está
-                      compuesta por caldo, vegetales, carnes, pescado o
-                      mariscos, y diferentes tipos de fideos o granos. Es un
-                      plato que puede variar mucho dependiendo de los
-                      ingredientes utilizados
-                    </p>
-                    <p>Precio: $2030.12</p>
-                    <button class="btn btn-primary btn-Comprar">Comprar</button>
-                  </div>
-                </div>
-              </article>
-            </div>
+          </div>
           </section>
           <section
             class="shoppingCart col col-12 col-lg-3 d-flex justify-content-center"
           >
             <div>
               <div class="card scrollTable" style="width: 18rem">
-                  <div class="cartTittle text-center">
-                    <h2>Carrito</h2>
-                  </div>
-                  <table class="table table-striped">
-                    <thead>
-                      <th scope="col">Nombre</th>
-                      <th scope="col">Cantidad</th>
-                      <th scope="col">Precio</th>
-                    </thead>
-                    <tbody class="" id="tableBody"></tbody>
-                    <tbody id="tableBodyQuantityPrice"></tbody>
-                  </table>
+                <div class="cartTittle text-center">
+                  <h2>Carrito</h2>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                  </thead>
+                  <tbody class="" id="tableBody"></tbody>
+                  <tbody id="tableBodyQuantityPrice"></tbody>
+                </table>
               </div>
               <div class="card pay">
                 <table class="table table-striped">
                   <tbody id="tableBodyQuantityPrice"></tbody>
                 </table>
-                <a href="./pages/ticket.html " class="d-grid btn btn-primary" id="payButton" disabled>Pagar</a>
+                <a
+                  href="./pages/ticket.html "
+                  class="d-grid btn btn-primary"
+                  id="payButton"
+                  disabled
+                  >Pagar</a
+                >
                 <div class="row">
                   <div class="btn-group me-2" role="group">
                     <button class="d-grid btn btn-danger" id="vaciar-carrito">
@@ -209,17 +122,19 @@
       </main>
     </div>
 
-    
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="./script/carritoController.js"></script>
-    <script src="./script/menuController.js"></script>
-    <script src="./script/buttonsController.js"></script>
     <script src="./script/imgController.js"></script>
+    <script src="./script/buttonsController.js"></script>
+    
   </body>
 </html>
